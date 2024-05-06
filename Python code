@@ -1,4 +1,5 @@
-PYTHON CODE
+# PYTHON CODE
+
 import pandas as pd import numpy as np
 import matplotlib.pyplot as plt import seaborn as sns from sklearn.model_selection import train_test_split from sklearn.ensemble import RandomForestRegressor from sklearn import metrics ts=pd.read_csv('TEST SHEET 2.csv')
 ts.head() ts.isnull().sum() ts.shape ts.info print(ts.GRADE.value_counts()) ts.replace({'AGE':{'UNKNOWN':-1}},inplace=True) ts.head() ts.replace({'GRADE':{'M25':25,'M30':30,'M35':35}},inplace=True)
